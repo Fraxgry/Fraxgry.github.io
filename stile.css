@@ -1,0 +1,70 @@
+/* stile.css */
+body {
+    margin: 0;
+    padding: 0;
+    background-color: black; /* colore del resto della pagina */
+    color: white; /* testo dei paragrafi */
+    font-family: bebas neue;
+}
+
+.top-strip {
+    background-color: rgb(160, 65, 10); /* colore della striscia in alto */
+    height: 20vh; /* altezza della striscia proporzionale alla finestra */
+    display: flex;
+    align-items: center; /* centra verticalmente il titolo */
+    justify-content: flex-start; /* titolo allineato a sinistra */
+    padding-left: 20px; /* spazio a sinistra del titolo */
+}
+
+.top-strip h1 {
+    margin: 0;
+    font-size: clamp(30px, 6vw, 100px); /* dimensione responsiva */
+    font-family: 'bebas neue'; /* font del titolo */
+    color: white;
+    font-style: italic; /* testo inclinato */
+}
+
+p {
+    margin: 20px; /* margine per il paragrafo sotto la striscia */
+    font-size: 1.5rem; /* dimensione leggibile */
+    line-height: 1.2; /* distanza tra le righe */
+}
+
+/* Griglia 4 immagini: 3 a sinistra, 1 a destra */
+.custom-grid {
+    display: flex;
+    gap: 30px;
+    padding: 50px;
+    max-width: 1000px; /* larghezza massima della griglia */
+    margin: 0 auto; /* centra la griglia nello schermo */
+}
+
+.left-column {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    flex: 1;
+}
+
+.right-column {
+    display: flex;
+    align-items: flex-start;
+    flex: 1;
+}
+
+.custom-grid img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.custom-grid img:hover {
+    transform: scale(1.05);
+}
+
+.custom-grid img:hover {
+    transform: scale(1.05);
+}
