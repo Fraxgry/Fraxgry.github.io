@@ -74,6 +74,7 @@ p {
 .grid {
     display: grid;
     grid-template-columns: repeat(5, minmax(clamp(100px, 18vw, 200px), 1fr));
+    grid-auto-rows: auto;
     gap: 20px;
     padding: 50px;
     width=maxc-ontent;
@@ -118,6 +119,7 @@ p {
     
     background-color: rgb(160, 65, 10);
 }
+
 
 
 
