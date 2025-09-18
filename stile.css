@@ -72,8 +72,8 @@ p {
 
 /* Griglia 20 immagini leggende */
 .grid {
-    display: flex;
-    grid-template-columns: repeat(5, minmax(clamp(100px, 15vw, 200px), 1fr));
+    display: grid;
+    grid-template-columns: repeat(5, minmax(clamp(100px, 18vw, 200px), 1fr));
     gap: 20px;
     padding: 50px;
     max-width: 1000px;
@@ -118,6 +118,7 @@ p {
     
     background-color: rgb(160, 65, 10);
 }
+
 
 
 
