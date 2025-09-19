@@ -119,5 +119,9 @@ p {
     
     background-color: rgb(160, 65, 10);
 }
+#paragrafi{
+    font-size: clamp(14px, 2vw, 20px);
+}
+
 
 
