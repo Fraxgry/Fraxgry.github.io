@@ -120,8 +120,19 @@ p {
     background-color: rgb(160, 65, 10);
 }
 #paragrafi{
-    font-size: clamp(10px, 2vw, 30px);
+    font-size: clamp(14px, 2vw, 30px);
 }
+
+.text-box{
+    max-width: 1000px;
+    margin: 20px auto;
+    padding: 15px;
+    background-color: rgb(160, 65, 10);
+    border-radius: 10px;
+    text-align: center;
+    font-size: 16px;
+   
+
 
 
 
