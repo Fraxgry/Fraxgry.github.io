@@ -132,7 +132,14 @@ p {
     text-align: center;
     font-size: 16px;
 }
+
+#squadre_elenchi{
+    margin-left: 110px;
+    font-size: clamp(14px, 2vw, 30px)
+
+}
    
+
 
 
 
