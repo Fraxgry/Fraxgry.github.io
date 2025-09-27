@@ -87,7 +87,7 @@ body {
     border-radius: clamp(10px, 1vw, 50px);
     cursor: pointer;
     transition: transform 0.3s;
-    opacity: 50%;
+    opacity: 70%;
 }
 
 .custom-grid img:hover {
@@ -121,7 +121,7 @@ body {
     transition: transform 0.3s;
     box-shadow: 0 4px 12px rgba(0,0,0,0.2);
     size: clamp(400px, 40vw,1000px);
-    opacity: 50%;
+    opacity: 70%;
 }
 
 .grid img:hover {
@@ -188,6 +188,7 @@ body {
 
 
    
+
 
 
 
