@@ -1,0 +1,195 @@
+/* stile.css */
+.top-strip {
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding-left: 20px;
+
+    /* altezza minima, cresce con il contenuto */
+    min-height: 4vh;  
+    height: auto;
+    padding-top: 1vh;
+    padding-bottom: .5vh;
+    gap:10px;
+    
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.top-strip img{
+    height: 50%;    /* proporzionale alla barra */
+    width: auto;    /* mantiene proporzioni */
+    max-height: clamp(35px, 6vh, 90px);
+    
+}
+
+body {
+    margin: 0;
+
+    /* usa CSS custom property per il padding-top dinamico */
+    padding-top: calc(4vh + 3vw); /* 4vh base + crescita approssimativa del titolo */
+    
+    min-height: 100vh;
+    background: linear-gradient(
+        to bottom,
+        rgb(0, 0, 56) calc(4vh + 3vw),  /* parte subito sotto la barra */
+        black calc(8vh + 6vw),           /* fascia blu proporzionata */
+        black 100%
+    );
+    background-repeat: no-repeat;
+    color: white;
+    font-family: "bebas neue";
+}
+
+
+
+.top-strip h1 {
+    margin: 0;
+    font-size: clamp(20px, 3vw, 90px); /* dimensione responsiva */
+    font-family: 'Oswald'; /* font del titolo */
+    color: white; /* testo inclinato */
+}
+
+
+
+
+
+/* Griglia 4 immagini home */
+.custom-grid {
+    display: flex;
+    gap: 30px;
+    padding: clamp(10px, 6vw, 50px);
+    max-width: clamp(1000px, 70vw, 3000px); /* larghezza massima della griglia */
+    margin: 0 auto; /* centra la griglia nello schermo */
+}
+
+.left-column {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    flex: 1;
+}
+
+.right-column {
+    display: flexcolumn;
+    flex: 1;
+}
+
+.custom-grid img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: clamp(10px, 1vw, 50px);
+    cursor: pointer;
+    transition: transform 0.3s;
+    opacity: 50%;
+}
+
+.custom-grid img:hover {
+    transform: scale(1.05);
+    opacity: 100%;
+}
+
+.custom-grid img:hover {
+    transform: scale(1.05);
+}
+
+
+/* Griglia 20 immagini leggende */
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    max-width: clamp(300px, 90vw, 1200px);
+    margin: 0 auto;
+    gap: 20px;
+    padding: clamp(10px, 4vw, 50px);
+}
+
+
+.grid img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: transform 0.3s;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    size: clamp(400px, 40vw,1000px);
+    opacity: 50%;
+}
+
+.grid img:hover {
+    transform: scale(1.05); /* leggero ingrandimento */
+    opacity: 100%;
+}
+
+#storia_odd{
+    width: clamp(200px, 50vw,2000px); 
+    padding:20px; 
+    border-radius: clamp(10px, 2vw,10px); 
+    margin-right: auto;
+    margin-left: 10px;
+    margin-top: 30px;
+    
+    
+}
+
+ 
+
+#storia{
+    width: clamp(200px, 50vw,2000px); 
+    padding:20px; 
+    border-radius: clamp(10px, 2vw,10px); 
+    margin-left: auto;
+    margin-top: 30px;
+    margin-right: 20px;
+    
+    
+}
+#paragrafi{
+    font-size: clamp(3px, 2vw, 100px);
+    margin: clamp(10px, 2vw, 5px);
+}
+
+#storia-sfondo{
+    margin: 0;
+    padding-top: 5%;
+    background:linear-gradient(rgb(0, 0, 56) 1%,black 4%, black 100%); /* colore del resto della pagina */
+    color: white; /* testo dei paragrafi */
+    font-family: bebas neue;
+
+}
+
+.text-box{
+    max-width: 1000px;
+    margin: 20px auto;
+    padding: 15px;
+    background:radial-gradient(rgb(0, 0, 56) 30%, black 70%);
+    border-radius: 10px;
+    text-align: center;
+    font-size:clamp(20px, 2vw, 40px);
+}
+
+#squadre_elenchi{
+    margin-left: clamp(30px, 3vw, 600px);
+    font-size: clamp(1px, 2vw, 50px)
+
+}
+
+
+
+
+   
+
+
+
+
+
+
+
