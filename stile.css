@@ -30,14 +30,14 @@
 body {
     margin: 0;
 
-    /* usa CSS custom property per il padding-top dinamico */
-    padding-top: calc(3vh + 4vw); /* 4vh base + crescita approssimativa del titolo */
+    
+    padding-top: calc(3vh + 4vw); 
     
     min-height: 100vh;
     background: linear-gradient(
         to bottom,
         rgb(0, 0, 56) calc(4vh + 3vw),  /* parte subito sotto la barra */
-        black calc(8vh + 6vw),           /* fascia blu proporzionata */
+        black calc(8vh + 6vw),           
         black 100%
     );
     background-repeat: no-repeat;
@@ -49,7 +49,7 @@ body {
 
 .top-strip h1 {
     margin: 0;
-    font-size: clamp(20px, 4vw, 90px); /* dimensione responsiva */
+    font-size: clamp(10px, 4vw, 90px); /* dimensione responsiva */
     font-family: 'Oswald'; /* font del titolo */
     color: white; /* testo inclinato */
 }
@@ -86,7 +86,7 @@ body {
     border-radius: clamp(10px, 1vw, 50px);
     cursor: pointer;
     transition: transform 0.3s;
-    opacity: 50%;
+    opacity: 70%;
 }
 
 .custom-grid img:hover {
@@ -94,9 +94,7 @@ body {
     opacity: 100%;
 }
 
-.custom-grid img:hover {
-    transform: scale(1.05);
-}
+
 
 
 /* Griglia 20 immagini leggende */
@@ -128,6 +126,10 @@ body {
     opacity: 100%;
 }
 
+h2{
+    font-size: clamp(4px, 2vw, 100px)
+}
+
 #storia_odd{
     width: clamp(200px, 50vw,2000px); 
     padding:20px; 
@@ -154,8 +156,8 @@ body {
     
 }
 #paragrafi{
-    font-size: clamp(3px, 2vw, 100px);
-    margin: clamp(10px, 2vw, 5px);
+    font-size: clamp(2px, 1.7vw, 80px);
+    margin: clamp(5px, 2vh, 10px);
 }
 
 #storia-sfondo{
@@ -179,11 +181,23 @@ body {
 }
 
 #squadre_elenchi{
-    margin-left: clamp(30px, 3vw, 600px);
-    font-size: clamp(1px, 2vw, 50px)
+    padding-left: clamp(10px, 4vw, 70px);
+    font-size: clamp(3px, 1.4vw, 30px)
 
 }
 
+
+
+#iter h2{
+    padding-left: clamp(10px, 1vh, 30px);
+}
+
+.responsive-table{
+    padding-left: clamp(10px, 2vh, 20px);
+}
+  
+  
+  
 
 
 
