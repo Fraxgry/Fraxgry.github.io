@@ -21,17 +21,18 @@
 }
 
 .top-strip img{
-    height: 50%;    /* proporzionale alla barra */
+    height: clamp(20px, 4vw, 1000px);    /* proporzionale alla barra */
     width: auto;    /* mantiene proporzioni */
     max-height: clamp(35px, 6vh, 90px);
     
 }
 
 body {
+    
     margin: 0;
 
+    padding-top: calc(3vh + 4vw);
     
-    padding-top: calc(3vh + 4vw); 
     
     min-height: 100vh;
     background: linear-gradient(
@@ -102,7 +103,7 @@ body {
 .grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    max-width: clamp(300px, 90vw, 1200px);
+    max-width: clamp(300px, 90vw, 1800px);
     margin: 0 auto;
     gap: 20px;
     padding: clamp(10px, 4vw, 50px);
@@ -194,6 +195,7 @@ h2{
 
 .responsive-table{
     padding-left: clamp(10px, 2vh, 20px);
+    
 }
   
   
