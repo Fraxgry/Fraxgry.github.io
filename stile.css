@@ -250,6 +250,18 @@ h2{
     background:linear-gradient(rgb(0, 0, 29) 5%, black 70%);
 }
 
+.squadre{
+    padding-left: clamp(10px, 1vh, 30px);
+}
+.squadre h2{
+    font-size: clamp(5px, 4vw, 50px); 
+}
+
+
+.squadre h3{
+    font-size: clamp(1px, 2vw, 30px); 
+}
+
   
   
   
