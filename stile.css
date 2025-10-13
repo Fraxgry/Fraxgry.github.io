@@ -186,6 +186,7 @@ h2{
     margin-left: 10px;
     margin-top: 30px;
     text-align: center;
+    font-family: Georgia;
     
     
 }
@@ -199,13 +200,14 @@ h2{
     margin-left: auto;
     margin-top: 30px;
     margin-right: 20px;
-    text-align: center;
+    text-align: center;font-family: Georgia;
     
     
 }
 #paragrafi{
     font-size: clamp(2px, 1.7vw, 80px);
     margin: clamp(5px, 2vh, 10px);
+    font-family: Georgia;
 }
 
 #storia-sfondo{
@@ -213,7 +215,7 @@ h2{
     padding-top: 5%;
     background:linear-gradient(rgb(0, 0, 56) 1%,black 4%, black 100%); /* colore del resto della pagina */
     color: white; /* testo dei paragrafi */
-    font-family: bebas neue;
+    
     
 
 }
@@ -231,6 +233,7 @@ h2{
 #squadre_elenchi{
     padding-left: clamp(10px, 4vw, 70px);
     font-size: clamp(3px, 1.4vw, 30px)
+    
 
 }
 
@@ -254,13 +257,18 @@ h2{
     padding-left: clamp(10px, 1vh, 30px);
 }
 .squadre h2{
-    font-size: clamp(5px, 4vw, 50px); 
+    font-size: clamp(10px, 4vw, 50px); 
 }
 
 
 .squadre h3{
     font-size: clamp(1px, 2vw, 30px); 
 }
+
+.squadre li{
+    font-size: clamp(1px, 1vw, 30px)
+}
+ 
 
   
   
