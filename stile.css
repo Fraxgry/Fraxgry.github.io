@@ -273,13 +273,22 @@ h2{
     font-size: clamp(1px, 1vw, 30px)
 }
  
+/* base: navbar desktop */
 .menu-links {
   display: flex;
   gap: 20px;
-  padding-left: 50px ;
+  padding-left: 50px;
 }
 
-/* bottone hamburger nascosto di default */
+/* immagini */
+.menu-links img {
+  height: clamp(25px, 4vw, 100px);
+  cursor: pointer;
+  opacity: 0.75;
+  transition: all 0.2s;
+}
+
+/* hamburger nascosto */
 .menu-toggle {
   display: none;
   background: none;
@@ -287,41 +296,40 @@ h2{
   color: white;
   font-size: 28px;
   cursor: pointer;
+  z-index: 3000;
 }
 
-/* immagini di menu */
-.menu-links img {
-  height: clamp(1px, 4vw, 100px); /* si riducono in base alla larghezza */
-  cursor: pointer;
-  opacity: 75%;
-  transition: transform 0.2s, opacity 0.2s, height 0.2s;
-}
-.menu-links img:hover{
-    transform: scale(1.05);
-    opacity: 100%;
-}
-
-/* --- responsive --- */
+/* responsive mobile */
 @media (max-width: 500px) {
   .menu-toggle {
     display: block;
   }
 
+  /* rendi il menu verticale e assoluto */
   .menu-links {
-    position: absolute;
-    top: 70px;
-    right: 20px;
-    background-color: #111;
+    position: absolute;   /* posizionamento relativo al body */
+    top: 100%;            /* subito sotto la top-strip */
+    right: 0;             /* allineato a destra */
     flex-direction: column;
+    background-color: #111;
     padding: 10px;
-    border-radius: 8px;
-    display: none; /* nascosto di default */
+    border-radius: 0 0 8px 8px;
+    width: 150px;         /* evita scroll orizzontale */
+    display: none;        /* nascosto di default */
+    z-index: 2000;
   }
 
   .menu-links.show {
-    display: flex; /* mostrato quando attivo */
+    display: flex;        /* si mostra cliccando hamburger */
+  }
+
+  .menu-links img {
+    height: 40px;
+    margin: 5px 0;
   }
 }
+
+
 
 
   
@@ -331,7 +339,6 @@ h2{
 
 
    
-
 
 
 
