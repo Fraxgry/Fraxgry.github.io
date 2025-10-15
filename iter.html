@@ -3,20 +3,28 @@
 <html lang="it">
 <head>
   <meta charset="utf-8">
-  <title>COME FUNZIONA IL CAMPIONATO NBA</title>
+  <title>ITER</title>
+  
   <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="stile.css">
 </head>
 <body>
     <div class="top-strip">
         <img src="img/logo.png" alt="">
-        <h1>COME FUNZIONA IL CAMPIONATO NBA</h1>
-       
+        <h1>ITER</h1>
+        <button class="menu-toggle" id="menu-toggle">☰</button>
+        <div class="menu-links" id="menu-links">
+          <a href="index.html"><img  src="img/home.jpg"></a>
+          <a href="storia.html"><img  src="img/storia-menu.jpg"></a>
+          <a href="squadre.html"><img style="border-radius: 50px;"src="img/team-menu.jpg"></a>
+          <a href="leggende.html"><img src="img/leggende-menu.jpg"></a>
+          <a href="https://www.nba.com/"><img style="border-radius:50px;"src="img/info.jpg"></a>
+        </div>
     </div>
 
 <div id="iter">
 
-   <p id="paragrafi">
+   <p >
         L’NBA è molto diversa dai campionati a cui siamo abituati in Europa. Nel nostro sistema si gioca un girone 
         con andata e ritorno e chi ha più punti vince lo scudetto. In NBA invece la stagione è divisa in più fasi e il 
         titolo si assegna attraverso playoff a eliminazione diretta. Inoltre, la classifica è divisa in due Conference (Est e Ovest) e 
@@ -33,7 +41,7 @@
   
   <h2>Regular Season</h2>
   
-  <p id="paragrafi">
+  <p >
         La regular season è la fase più lunga: ogni squadra gioca 82 partite da ottobre ad aprile. Conta la percentuale di vittorie, non i punti, e determina 
         la posizione in classifica e i seed per i playoff.</p>
 <div class="responsive-table">
@@ -45,13 +53,13 @@
   
   <h2>In-Season Tournament</h2>
   
-  <p id="paragrafi">
+  <p >
     Dal 2023, alcune partite della regular season valgono anche per un torneo interno. Dopo gironi e eliminazioni, 
     la finale è un match extra e non influenza la classifica generale.</p> 
 
 
   <h2>Play-In Tournament</h2>
-  <p id="paragrafi">
+  <p >
     Le squadre dal 7° al 10° posto di ogni Conference giocano il Play-In per conquistare gli ultimi due posti playoff.</p>
 
   <ul id="squadre_elenchi">
@@ -62,9 +70,9 @@
 
   <h2>Playoff</h2>
 
-  <p id="paragrafi">
+  <p >
     16 squadre partecipano ai playoff, tabellone a eliminazione diretta, serie al meglio delle 7 partite.</p>
-<div class="responsive-table">
+<div >
     <table border="1" cellpadding="5" cellspacing="0">
     <tr><th>Turni</th><th>Formato</th></tr>
     <tr><td>Primo turno</td><td>Best of 7</td></tr>
@@ -74,7 +82,7 @@
   </table> 
   </div>
   <h2>NBA Finals</h2>
-  <p id="paragrafi">
+  <p >
     I vincitori delle due Conference si affrontano in una serie al meglio delle 7. Chi vince diventa Campione NBA. 
     Il miglior giocatore riceve il premio Finals MVP.</p> 
     
@@ -99,5 +107,6 @@
 
 </div>
 
+<script src="nav.js"></script>
 </body>
 </html>

@@ -7,7 +7,7 @@
     padding-left: 20px;
 
     /* altezza minima, cresce con il contenuto */
-    min-height: 4vh;  
+    min-height: 5vh;  
     height: auto;
     
     gap:10px;
@@ -23,7 +23,7 @@
 .top-strip img{
     height: clamp(20px, 4vw, 1000px);    /* proporzionale alla barra */
     width: auto;    /* mantiene proporzioni */
-    max-height: clamp(35px, 6vh, 90px);
+    max-height: clamp(50px, 8vh, 300px);
     
 }
 
@@ -31,7 +31,8 @@ body {
     
     margin: 0;
 
-    padding-top: calc(3vh + 4vw);
+    padding-top: calc(3vh + 3vw);
+    
     
     
     min-height: 100vh;
@@ -44,6 +45,13 @@ body {
     background-repeat: no-repeat;
     color: white;
     font-family: "bebas neue";
+}
+
+body p{
+    padding-left: clamp(20px, 2vw, 100px);
+    padding-right: clamp(20px, 2vw, 100px);
+    font-size: clamp(1.2px, 2vw, 80px);
+    font-family: Georgia;
 }
 
 
@@ -186,12 +194,7 @@ h2{
     margin-left: 10px;
     margin-top: 30px;
     text-align: center;
-    font-family: Georgia;
-    
-    
 }
-
- 
 
 #storia{
     width: clamp(200px, 50vw,2000px); 
@@ -200,14 +203,15 @@ h2{
     margin-left: auto;
     margin-top: 30px;
     margin-right: 20px;
-    text-align: center;font-family: Georgia;
-    
+    text-align: center;
     
 }
-#paragrafi{
-    font-size: clamp(2px, 1.7vw, 80px);
+
+.paragrafi{
+    font-size: clamp(4px, 2vw, 100px);
     margin: clamp(5px, 2vh, 10px);
     font-family: Georgia;
+    
 }
 
 #storia-sfondo{
@@ -231,8 +235,8 @@ h2{
 }
 
 #squadre_elenchi{
-    padding-left: clamp(10px, 4vw, 70px);
-    font-size: clamp(3px, 1.4vw, 30px)
+    padding-left: clamp(50px, 8vw, 1000px);
+    font-size: clamp(5px, 1.5vw, 50px)
     
 
 }
@@ -269,6 +273,56 @@ h2{
     font-size: clamp(1px, 1vw, 30px)
 }
  
+.menu-links {
+  display: flex;
+  gap: 20px;
+  padding-left: 50px ;
+}
+
+/* bottone hamburger nascosto di default */
+.menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  color: white;
+  font-size: 28px;
+  cursor: pointer;
+}
+
+/* immagini di menu */
+.menu-links img {
+  height: clamp(1px, 4vw, 100px); /* si riducono in base alla larghezza */
+  cursor: pointer;
+  opacity: 75%;
+  transition: transform 0.2s, opacity 0.2s, height 0.2s;
+}
+.menu-links img:hover{
+    transform: scale(1.05);
+    opacity: 100%;
+}
+
+/* --- responsive --- */
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: block;
+  }
+
+  .menu-links {
+    position: absolute;
+    top: 70px;
+    right: 20px;
+    background-color: #111;
+    flex-direction: column;
+    padding: 10px;
+    border-radius: 8px;
+    display: none; /* nascosto di default */
+  }
+
+  .menu-links.show {
+    display: flex; /* mostrato quando attivo */
+  }
+}
+
 
   
   
