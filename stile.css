@@ -247,10 +247,26 @@ h2{
     padding-left: clamp(10px, 1vh, 30px);
 }
 
-.responsive-table{
-    padding-left: clamp(10px, 2vh, 20px);
-    
+.responsive-table {
+  padding-left: clamp(10px, 2vh, 20px);
+  display: flex;
+  justify-content: left; /* centra la tabella orizzontalmente */
 }
+
+.responsive-table table {
+  width: auto;
+  max-width: 100%;
+  font-size: clamp(12px, 2.5vw, 18px); /* scala la dimensione testo */
+  border-collapse: collapse;
+}
+
+.responsive-table th,
+.responsive-table td {
+  padding: 8px;
+  text-align: left;
+  word-break: break-word;
+}
+
 
 #faq{
 
@@ -273,19 +289,22 @@ h2{
     font-size: clamp(1px, 1vw, 30px)
 }
  
-/* base: navbar desktop */
+
 .menu-links {
   display: flex;
-  gap: 20px;
-  padding-left: 50px;
+  gap: 10px;
 }
 
-/* immagini */
 .menu-links img {
   height: clamp(25px, 4vw, 100px);
   cursor: pointer;
   opacity: 0.75;
-  transition: all 0.2s;
+  transition: 0.3s;
+}
+
+.menu-links img:hover {
+  opacity: 1;
+  transform: scale(1.05);
 }
 
 /* hamburger nascosto */
@@ -300,27 +319,27 @@ h2{
 }
 
 /* responsive mobile */
-@media (max-width: 500px) {
+@media (max-width: 780px) {
   .menu-toggle {
     display: block;
   }
 
-  /* rendi il menu verticale e assoluto */
+  
   .menu-links {
-    position: absolute;   /* posizionamento relativo al body */
-    top: 100%;            /* subito sotto la top-strip */
-    right: 0;             /* allineato a destra */
+    position: absolute;  
+    top: 100%;            
+    right: 0;            
     flex-direction: column;
     background-color: #111;
     padding: 10px;
     border-radius: 0 0 8px 8px;
-    width: 150px;         /* evita scroll orizzontale */
-    display: none;        /* nascosto di default */
+    width: 100px;         
+    display: none;        
     z-index: 2000;
   }
 
   .menu-links.show {
-    display: flex;        /* si mostra cliccando hamburger */
+    display: flex;      
   }
 
   .menu-links img {
